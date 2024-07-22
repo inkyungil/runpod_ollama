@@ -1,0 +1,130 @@
+time=2024-05-04T14:08:50.471+09:00 level=INFO source=images.go:828 msg="total blobs: 5"
+time=2024-05-04T14:08:50.472+09:00 level=INFO source=images.go:835 msg="total unused blobs removed: 0"
+time=2024-05-04T14:08:50.472+09:00 level=INFO source=routes.go:1071 msg="Listening on 127.0.0.1:11434 (version 0.1.33)"
+time=2024-05-04T14:08:50.472+09:00 level=INFO source=payload.go:30 msg="extracting embedded files" dir=/var/folders/8t/lljyr1_s5_3bx46f00lqy6t40000gn/T/ollama3966266986/runners
+time=2024-05-04T14:08:50.499+09:00 level=INFO source=payload.go:44 msg="Dynamic LLM libraries [cpu_avx2 cpu cpu_avx]"
+time=2024-05-04T14:08:50.499+09:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-04T14:12:32.473+09:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-04T14:12:33.664+09:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-04T14:12:33.667+09:00 level=INFO source=server.go:289 msg="starting llama server" cmd="/var/folders/8t/lljyr1_s5_3bx46f00lqy6t40000gn/T/ollama3966266986/runners/cpu_avx2/ollama_llama_server --model /Users/kenoak/.ollama/models/blobs/sha256-00e1317cbf74d901080d7100f57580ba8dd8de57203072dc6f668324ba545f29 --ctx-size 2048 --batch-size 512 --embedding --log-disable --parallel 1 --port 50356"
+time=2024-05-04T14:12:33.679+09:00 level=INFO source=sched.go:340 msg="loaded runners" count=1
+time=2024-05-04T14:12:33.679+09:00 level=INFO source=server.go:432 msg="waiting for llama runner to start responding"
+{"function":"server_params_parse","level":"INFO","line":2606,"msg":"logging to file is disabled.","tid":"0x7ff85e9d4100","timestamp":1714799554}
+{"build":2770,"commit":"952d03d","function":"main","level":"INFO","line":2823,"msg":"build info","tid":"0x7ff85e9d4100","timestamp":1714799554}
+{"function":"main","level":"INFO","line":2830,"msg":"system info","n_threads":6,"n_threads_batch":-1,"system_info":"AVX = 1 | AVX_VNNI = 0 | AVX2 = 1 | AVX512 = 0 | AVX512_VBMI = 0 | AVX512_VNNI = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 1 | SSE3 = 1 | SSSE3 = 1 | VSX = 0 | MATMUL_INT8 = 0 | LLAMAFILE = 1 | ","tid":"0x7ff85e9d4100","timestamp":1714799554,"total_threads":12}
+llama_model_loader: loaded meta data with 21 key-value pairs and 291 tensors from /Users/kenoak/.ollama/models/blobs/sha256-00e1317cbf74d901080d7100f57580ba8dd8de57203072dc6f668324ba545f29 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Meta-Llama-3-8B-Instruct
+llama_model_loader: - kv   2:                          llama.block_count u32              = 32
+llama_model_loader: - kv   3:                       llama.context_length u32              = 8192
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 4096
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 14336
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 500000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 2
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 128256
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  14:                      tokenizer.ggml.tokens arr[str,128256]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,128256]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                      tokenizer.ggml.merges arr[str,280147]  = ["Ġ Ġ", "Ġ ĠĠĠ", "ĠĠ ĠĠ", "...
+llama_model_loader: - kv  17:                tokenizer.ggml.bos_token_id u32              = 128000
+llama_model_loader: - kv  18:                tokenizer.ggml.eos_token_id u32              = 128001
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% set loop_messages = messages %}{% ...
+llama_model_loader: - kv  20:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   65 tensors
+llama_model_loader: - type q4_0:  225 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: missing pre-tokenizer type, using: 'default'
+llm_load_vocab:                                             
+llm_load_vocab: ************************************        
+llm_load_vocab: GENERATION QUALITY WILL BE DEGRADED!        
+llm_load_vocab: CONSIDER REGENERATING THE MODEL             
+llm_load_vocab: ************************************        
+llm_load_vocab:                                             
+llm_load_vocab: special tokens definition check successful ( 256/128256 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = llama
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 128256
+llm_load_print_meta: n_merges         = 280147
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 4096
+llm_load_print_meta: n_head           = 32
+llm_load_print_meta: n_head_kv        = 8
+llm_load_print_meta: n_layer          = 32
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 4
+llm_load_print_meta: n_embd_k_gqa     = 1024
+llm_load_print_meta: n_embd_v_gqa     = 1024
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-05
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 14336
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 0
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 500000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: model type       = 8B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 8.03 B
+llm_load_print_meta: model size       = 4.33 GiB (4.64 BPW) 
+llm_load_print_meta: general.name     = Meta-Llama-3-8B-Instruct
+llm_load_print_meta: BOS token        = 128000 '<|begin_of_text|>'
+llm_load_print_meta: EOS token        = 128001 '<|end_of_text|>'
+llm_load_print_meta: LF token         = 128 'Ä'
+llm_load_print_meta: EOT token        = 128009 '<|eot_id|>'
+llm_load_tensors: ggml ctx size =    0.15 MiB
+llm_load_tensors:        CPU buffer size =  4437.80 MiB
+.......................................................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: n_batch    = 512
+llama_new_context_with_model: n_ubatch   = 512
+llama_new_context_with_model: freq_base  = 500000.0
+llama_new_context_with_model: freq_scale = 1
+llama_kv_cache_init:        CPU KV buffer size =   256.00 MiB
+llama_new_context_with_model: KV self size  =  256.00 MiB, K (f16):  128.00 MiB, V (f16):  128.00 MiB
+llama_new_context_with_model:        CPU  output buffer size =     0.50 MiB
+llama_new_context_with_model:        CPU compute buffer size =   258.50 MiB
+llama_new_context_with_model: graph nodes  = 1030
+llama_new_context_with_model: graph splits = 1
+{"function":"initialize","level":"INFO","line":448,"msg":"initializing slots","n_slots":1,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"initialize","level":"INFO","line":460,"msg":"new slot","n_ctx_slot":2048,"slot_id":0,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"main","level":"INFO","line":3067,"msg":"model loaded","tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"main","hostname":"127.0.0.1","level":"INFO","line":3270,"msg":"HTTP server listening","n_threads_http":"11","port":"50356","tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"update_slots","level":"INFO","line":1581,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"process_single_task","level":"INFO","line":1513,"msg":"slot data","n_idle_slots":1,"n_processing_slots":0,"task_id":2,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"process_single_task","level":"INFO","line":1513,"msg":"slot data","n_idle_slots":1,"n_processing_slots":0,"task_id":0,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"log_server_request","level":"INFO","line":2744,"method":"GET","msg":"request","params":{},"path":"/health","remote_addr":"127.0.0.1","remote_port":50367,"status":200,"tid":"0x70000ff6c000","timestamp":1714799565}
+{"function":"process_single_task","level":"INFO","line":1513,"msg":"slot data","n_idle_slots":1,"n_processing_slots":0,"task_id":1,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"log_server_request","level":"INFO","line":2744,"method":"GET","msg":"request","params":{},"path":"/health","remote_addr":"127.0.0.1","remote_port":50363,"status":200,"tid":"0x70000fd60000","timestamp":1714799565}
+{"function":"process_single_task","level":"INFO","line":1513,"msg":"slot data","n_idle_slots":1,"n_processing_slots":0,"task_id":3,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"process_single_task","level":"INFO","line":1513,"msg":"slot data","n_idle_slots":1,"n_processing_slots":0,"task_id":4,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"log_server_request","level":"INFO","line":2744,"method":"GET","msg":"request","params":{},"path":"/health","remote_addr":"127.0.0.1","remote_port":50364,"status":200,"tid":"0x70000fde3000","timestamp":1714799565}
+{"function":"log_server_request","level":"INFO","line":2744,"method":"GET","msg":"request","params":{},"path":"/health","remote_addr":"127.0.0.1","remote_port":50365,"status":200,"tid":"0x70000fe66000","timestamp":1714799565}
+{"function":"log_server_request","level":"INFO","line":2744,"method":"GET","msg":"request","params":{},"path":"/health","remote_addr":"127.0.0.1","remote_port":50366,"status":200,"tid":"0x70000fee9000","timestamp":1714799565}
+{"function":"process_single_task","level":"INFO","line":1513,"msg":"slot data","n_idle_slots":1,"n_processing_slots":0,"task_id":5,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"log_server_request","level":"INFO","line":2744,"method":"GET","msg":"request","params":{},"path":"/health","remote_addr":"127.0.0.1","remote_port":50422,"status":200,"tid":"0x70000ffef000","timestamp":1714799565}
+{"function":"process_single_task","level":"INFO","line":1513,"msg":"slot data","n_idle_slots":1,"n_processing_slots":0,"task_id":6,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"log_server_request","level":"INFO","line":2744,"method":"GET","msg":"request","params":{},"path":"/health","remote_addr":"127.0.0.1","remote_port":50422,"status":200,"tid":"0x70000ffef000","timestamp":1714799565}
+{"function":"launch_slot_with_data","level":"INFO","line":833,"msg":"slot is processing task","slot_id":0,"task_id":7,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"update_slots","ga_i":0,"level":"INFO","line":1819,"msg":"slot progression","n_past":0,"n_past_se":0,"n_prompt_tokens_processed":15,"slot_id":0,"task_id":7,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+{"function":"update_slots","level":"INFO","line":1843,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":7,"tid":"0x7ff85e9d4100","timestamp":1714799565}
+[GIN] 2024/05/04 - 14:16:13 | 200 |         3m41s |       127.0.0.1 | POST     "/api/generate"

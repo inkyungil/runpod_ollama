@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  llm_service:
+    build: ./serverless
+    container_name: llm_server
+    hostname: backend
+    restart: always
+    ports:
+      - "11434:11434"
+    networks:
+      - default
